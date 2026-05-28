@@ -17,7 +17,7 @@ def create_type_folders(directory: str, type_set: set):
             os.mkdir(folder)
         except FileExistsError:
             print(f"Folder '{ext_str}' already exists")
-
+          
 def sort_by_type(dir_in_str: str):
     directory = Path(dir_in_str)
     type_set = get_file_types(dir_in_str)
